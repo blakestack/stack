@@ -2,8 +2,12 @@ function stack(){
     this.id = "";
     this.plates = [];
 
-    this.add = () => {
+    this.stack = () => {
         this.plates.push("hello");
+    };
+
+    this.unstack = () => {
+        this.plates.pop();
     };
 
     this.toString = () => {
