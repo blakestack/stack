@@ -1,11 +1,11 @@
-function stack(){
+function stack(plate){
     this.id = "";
     this.plates = [];
 
     this.stack = () => {
-        this.plates.push("hello");
+        this.plates.push(plate);
     };
-
+    // Last in First out (LIFO)
     this.unstack = () => {
         this.plates.pop();
     };
