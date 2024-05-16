@@ -10,6 +10,10 @@ function stack(plate){
         this.plates.pop();
     };
 
+    this.peek = () => {
+        return this.plates[this.plates.length - 1]
+    };
+
     this.toString = () => {
         let stackString = "";
 
