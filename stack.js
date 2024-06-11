@@ -1,8 +1,8 @@
-function stack(plate){
-    this.id = "";
+function stack(id){
+    this.id = id;
     this.plates = [];
 
-    this.stack = () => {
+    this.stack = (plate) => {
         this.plates.push(plate);
     };
     // Last in First out (LIFO)
